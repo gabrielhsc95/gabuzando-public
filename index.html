@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" href="/styles-a29a419958deb9cf.css" integrity="sha384-zZ1Gg1ofZkg7BiRYVs7nEqZwM4yBFILBePj8XviMwpCCc09cw80w+8Yws5gvuHyB"/>
+<link rel="modulepreload" href="/gabuzando-36889a3482fff97d.js" crossorigin="anonymous" integrity="sha384-jx3phRUrGsWw9l9KKJqvrEvUs8YgexjsPBcsllz63A54EroS0/chd8ouylC6ijRJ"><link rel="preload" href="/gabuzando-36889a3482fff97d_bg.wasm" crossorigin="anonymous" integrity="sha384-iAhsMi6tStAoHiQx2evtEMsWDZetsS0YXc36O3BLFespK7pqrJOMDrvbBxHe2ygy" as="fetch" type="application/wasm"></head>
+
+<body>
+<script type="module">
+import init, * as bindings from '/gabuzando-36889a3482fff97d.js';
+const wasm = await init({ module_or_path: '/gabuzando-36889a3482fff97d_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+
+</html>
